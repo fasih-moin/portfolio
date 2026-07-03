@@ -93,7 +93,7 @@ h2 span{color:var(--blue)}
 .card-data::before{background:linear-gradient(90deg,var(--green),var(--blue))}
 .card-systems::before{background:linear-gradient(90deg,var(--amber),var(--orange,#f97316))}
 .card-security::before{background:linear-gradient(90deg,var(--red),var(--amber))}
-.card-xr::before{background:linear-gradient(90deg,var(--purple),var(--pink,#EC4899))}
+.card-qb::before{background:linear-gradient(90deg,var(--purple),var(--pink,#EC4899))}
 .project-header{display:flex;align-items:flex-start;justify-content:space-between;gap:.75rem}
 .project-title{font-family:var(--font-head);font-size:1rem;font-weight:700;color:var(--text);line-height:1.3}
 .project-links{display:flex;gap:.5rem;flex-shrink:0}
@@ -105,7 +105,7 @@ h2 span{color:var(--blue)}
 .badge-data{background:rgba(16,185,129,.15);color:#6EE7B7;border:1px solid rgba(16,185,129,.2)}
 .badge-systems{background:rgba(245,158,11,.15);color:#FCD34D;border:1px solid rgba(245,158,11,.2)}
 .badge-security{background:rgba(239,68,68,.15);color:#FCA5A5;border:1px solid rgba(239,68,68,.2)}
-.badge-xr{background:rgba(236,72,153,.15);color:#F9A8D4;border:1px solid rgba(236,72,153,.2)}
+.badge-qb{background:rgba(236,72,153,.15);color:#F9A8D4;border:1px solid rgba(236,72,153,.2)}
 .project-desc{font-size:.875rem;color:var(--muted);line-height:1.7;flex:1}
 .project-stack{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:auto}
 .stack-tag{font-family:var(--font-mono);font-size:.68rem;padding:.18rem .55rem;border-radius:.3rem;background:rgba(255,255,255,.04);color:var(--dim);border:1px solid rgba(255,255,255,.06)}
@@ -383,16 +383,19 @@ footer a{color:var(--blue);text-decoration:none}
       </div>
     </div>
 
-    <div class="project-card card-xr reveal">
+    <div class="project-card card-qb reveal">
       <div class="project-header">
         <div>
-          <span class="project-badge badge-xr">XR / VR</span>
-          <div class="project-title" style="margin-top:.5rem">VR Crime Investigator</div>
+          <span class="project-badge badge-qb">QuickBooks API Integration</span>
+          <div class="project-title" style="margin-top:.5rem">qb</div>
+          <div class="project-links">
+          <a href="https://github.com/fasih-moin/qb" target="_blank" rel="noopener" title="GitHub">&#8599;</a>
+        </div>
         </div>
       </div>
-      <p class="project-desc">First-person VR simulation with an interactive crime scene and interrogation room, replicating real investigative procedures. Physics-based object interaction and spatial scene navigation via Unity XR Toolkit.</p>
+      <p class="project-desc">A Flask web app that connects to the QuickBooks Online API via OAuth 2.0 and exposes a dark-themed dashboard for managing customers, invoices, payments, accounts, vendors, and financial reports.</p>
       <div class="project-stack">
-        <span class="stack-tag">Unity</span><span class="stack-tag">C#</span><span class="stack-tag">XR Toolkit</span><span class="stack-tag">Physics</span>
+        <span class="stack-tag">Flask</span><span class="stack-tag">Python</span><span class="stack-tag">QuickBooks API</span>
       </div>
     </div>
 
@@ -493,10 +496,6 @@ footer a{color:var(--blue);text-decoration:none}
     </div>
   </div>
 </section>
-
-<footer>
-  <p>Built with HTML, CSS & vanilla JS · <a href="https://github.com/fasih-moin" target="_blank" rel="noopener">Muhammad Fasih Ud Din</a> · 2026</p>
-</footer>
 
 <script>
 const nav=document.getElementById('nav');
